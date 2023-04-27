@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string-array name="news_titles_full_text">
+        <item>9NEWS</item>
+        <item>7NEWS</item>
+        <item>ABC NEWS</item>
+        <item>THE AGE</item>
+    </string-array>
+
+    <string-array name="news_description_full_text">
+        <item>Elon Musks giant SpaceX Starship rocket leaves craters and causes serious damage at Texas base</item>
+        <item>Gig economy shifts as Uber takes on supermarket delivery, government pushes for minimum employment standards</item>
+        <item>Pharmacists say clinics could close with proposed double dispensing prescriptions</item>
+        <item>Ski season accommodation shortage in Victoria alpine resorts discourages workers</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_stories">TOP STORIES</string>
+</resources>

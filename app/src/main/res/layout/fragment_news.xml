@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/fragmentNews"
+    tools:context=".NewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="698dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topNewsStory"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="@string/top_stories"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp" />
+
+    <!-- Fragment Layout -->
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <!-- Recycler for top news -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewTopNews"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="380dp"
+                    android:layout_height="140dp"
+                    app:reverseLayout="true"
+                    tools:listitem="@layout/news_top_items"/>
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/newsStory"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="NEWS"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp" />
+
+        <!-- Recycler for individual news -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="343dp"
+            android:layout_height="424dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            tools:listitem="@layout/news_item"/>
+    </LinearLayout>
+</FrameLayout>
